@@ -1,10 +1,10 @@
 import Home from '@/components/squchMart/PartnerMartStoreNewOrders/Home'
 import React from 'react'
 
-const page = () => {
+const PartnerMartStoreNewOrdersPage = () => {
   return (
     <Home />
   )
 }
 
-export default page
+export default PartnerMartStoreNewOrdersPage

@@ -1,10 +1,10 @@
 import Home from '@/components/squchMart/martPartnerDashboard/Home'
 import React from 'react'
 
-const page = () => {
+const MartPartnerDashboardPage = () => {
   return (
     <Home />
   )
 }
 
-export default page
+export default MartPartnerDashboardPage

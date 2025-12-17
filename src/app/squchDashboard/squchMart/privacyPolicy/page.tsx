@@ -1,10 +1,10 @@
 import Home from '@/components/squchMart/privacyPolicy/Home'
 import React from 'react'
 
-const page = () => {
+const PrivacyPolicyPage = () => {
   return (
     <Home />
   )
 }
 
-export default page
+export default PrivacyPolicyPage

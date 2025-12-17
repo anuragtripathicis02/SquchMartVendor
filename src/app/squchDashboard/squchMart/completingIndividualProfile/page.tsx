@@ -1,10 +1,10 @@
 import Home from '@/components/squchMart/completingIndividualProfile/Home'
 import React from 'react'
 
-const page = () => {
+const CompletingIndividualProfilePage = () => {
   return (
     <Home />
   )
 }
 
-export default page
+export default CompletingIndividualProfilePage

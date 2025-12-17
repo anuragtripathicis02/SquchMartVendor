@@ -4,6 +4,8 @@ import { usePathname } from "next/navigation";
 import Header from "./Header";
 import SideBar from "./SideBar";
 import MobilMenu from "./MobilMenu";
+import Navigation from "./Navigation";
+import Breadcrumb from "./Breadcrumb";
 
 export default function ClientLayout({
   children,
@@ -38,6 +40,7 @@ export default function ClientLayout({
   return (
     <div className={`dashboardPage ${isAuthPage ? "removeHeader" : ""}`}>
       {!isAuthPage && <Header />}
+      {!isAuthPage && <Navigation />}
       <div className="d-flex dashboard-main">
         {!isAuthPage && (
           <div className="side-menu-sec-main position-relative">
@@ -45,7 +48,10 @@ export default function ClientLayout({
           </div>
         )}
         <div className="right-pages">
-          <div className="inner-dashboard-pages fixed-width">{children}</div>
+          <div className="inner-dashboard-pages fixed-width">
+            {!isAuthPage && <Breadcrumb />}
+            {children}
+          </div>
         </div>
         {!isAuthPage && (
           <div className="mobile-menu-vendore d-lg-none ">

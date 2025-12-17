@@ -1,10 +1,10 @@
 import Home from '@/components/squchMart/refundPolicy/Home'
 import React from 'react'
 
-const page = () => {
+const RefundPolicyPage = () => {
   return (
     <Home />
   )
 }
 
-export default page
+export default RefundPolicyPage

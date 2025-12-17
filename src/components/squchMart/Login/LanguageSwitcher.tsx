@@ -15,7 +15,7 @@ export default function LanguageSwitcher() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const currentLang = searchParams.get("lang") || "en"; // Default to English
 
-  const changeLanguage = (lang) => {
+  const changeLanguage = (lang: string) => {
     const newUrl = new URL(window.location.href);
     newUrl.searchParams.set("lang", lang);
     router.push(newUrl.toString());

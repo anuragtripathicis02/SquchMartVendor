@@ -1,10 +1,10 @@
 import Home from '@/components/squchMart/otpVerification/Home'
 import React from 'react'
 
-const page = () => {
+const OtpVerificationPage = () => {
   return (
     <Home />
   )
 }
 
-export default page
+export default OtpVerificationPage
