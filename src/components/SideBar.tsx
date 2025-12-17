@@ -47,6 +47,7 @@ const SideBar = () => {
                   className="menu-items d-flex align-items-center gap-2 active"
                 >
                   <span className="icons fill-svg">
+                    
                     <svg
                       width="24"
                       height="24"
