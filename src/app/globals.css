@@ -387,6 +387,7 @@ body {
 .header-menu .inner-header-menu .admin-details-box .author-box.dropdown button {
   padding: 0;
   margin: 0;
+  border: 0;
   background: transparent;
 }
 
@@ -1854,8 +1855,7 @@ body .rs-input-group:not(.rs-input-group-disabled):hover {
   overflow: hidden;
   position: absolute !important;
   z-index: 9999 !important;
-  left: auto !important;
-  right: 15px;
+  /* right: 15px; */
   width: auto !important;
   border: 1px solid #e5e5ea;
 }
@@ -2394,7 +2394,7 @@ hr.light-bg {
 .order-slider-box .item-box ul li {
   font-weight: 700;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 22px;
   letter-spacing: 0px;
   text-transform: capitalize;
   display: flex;
@@ -3290,6 +3290,7 @@ textarea:focus {
 
 .item-card-box .bottom-item-box .edit-link button {
   padding: 0 !important;
+  z-index: 0;
 }
 
 .or-line {
@@ -4875,4 +4876,31 @@ ul.calendy-day-calen li .btn-day {
     flex: 0 0 50%;
     width: 50%;
   }
+}
+
+
+.modal-vendore.confirmation-modal-sec .modal-content h2 {color: var(--bs-white);}
+.head-btn-heading  .text-btn:hover{ color: var(--purple);}
+.order-slider-box .total-bill .btn-more:hover{ color: var(--purple);}
+
+.dashboard-main .side-menu-sec .inner-side-menu .menu-items:hover {
+    color: var(--bs-white) !important;
+}
+
+.left-box .btn-secondary:hover svg path{
+    fill: var(--purple);
+    stroke: none;
+}
+
+
+@media (max-width: 767px) {
+.rs-picker-popup .rs-calendar { min-width: 200px !important;}
+.rs-picker-daterange-calendar-group {
+    min-width: 200px;
+    flex-direction: column;
+    height: auto;
+}
+.rs-picker-daterange-panel { min-width: inherit !important;}
+.mobile-menu-vendore .side-menu-sec.side-menu-items-box ul .menu-items:hover{ color: var(--purple) !important;}
+
 }
